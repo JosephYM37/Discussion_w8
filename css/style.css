@@ -3,56 +3,65 @@
   
   form {
     display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid #ccc;
+    grid-template-columns: 75% 25%;
+    border: 1px solid black;
     border-radius: 16px;
     width:70%;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: black;
+    background: white;
   }
 
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
     /* background: #575294; */
-    color: #702082;
+    color: black;
   }
 
   #name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 20px;
     width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
+    background: white;
+    color: white;
   }
 
   #message {
     width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
     resize: vertical;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   input,
   textarea {
-    padding: 10px;
+    padding: 25px;
     border: 1px solid #ccc;
     width: 100%;
   }
 
   input[type="submit"] {
+    margin: 20px;
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;
   }
 
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: white;
+    color: green;
+    border-color: green;
   }
